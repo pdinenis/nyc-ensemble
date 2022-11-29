@@ -1,0 +1,68 @@
+
+The following have been reloaded with a version change:
+  1) anaconda/3-4.2.0 => anaconda/3-5.1
+
+/rigel/opt/anaconda3-5.1/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 72 of the file HA2.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+bal012008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal012008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal012008.dat.gz...
+Done downloading.
+bal022008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal022008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal022008.dat.gz...
+Done downloading.
+bal032008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal032008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal032008.dat.gz...
+Done downloading.
+bal042008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal042008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal042008.dat.gz...
+Done downloading.
+bal052008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal052008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal052008.dat.gz...
+Done downloading.
+bal062008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal062008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal062008.dat.gz...
+Done downloading.
+bal072008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal072008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal072008.dat.gz...
+Done downloading.
+bal082008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal082008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal082008.dat.gz...
+Done downloading.
+bal092008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal092008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal092008.dat.gz...
+Done downloading.
+bal102008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal102008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal102008.dat.gz...
+Done downloading.
+bal112008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal112008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal112008.dat.gz...
+Done downloading.
+bal122008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal122008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal122008.dat.gz...
+Done downloading.
+bal132008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal132008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal132008.dat.gz...
+Done downloading.
+bal142008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal142008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal142008.dat.gz...
+Done downloading.
+bal152008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal152008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal152008.dat.gz...
+Done downloading.
+bal162008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal162008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal162008.dat.gz...
+Done downloading.
+bal172008
+Downloading http://ftp.nhc.noaa.gov/atcf/archive/2008/bal172008.dat.gz to /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data/bal172008.dat.gz...
+Done downloading.
+All %s files written in geoclaw file format. 
+ Processing ".dat" finished. Now deleting /rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/atcf_data directory

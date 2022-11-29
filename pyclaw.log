@@ -1,0 +1,1 @@
+2022-09-15 03:57:27,174 numexpr.utils INFO CLAW: 145 - Note: NumExpr detected 32 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.

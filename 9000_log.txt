@@ -1,0 +1,101 @@
+make: Nothing to be done for `.exe'.
+Reading data file: claw.data
+         first 5 lines are comments and will be skipped
+Reading data file: amr.data
+         first 5 lines are comments and will be skipped
+  
+ Running amrclaw ...  
+  
+Reading data file: geoclaw.data
+         first 5 lines are comments and will be skipped
+Reading data file: refinement.data
+         first 5 lines are comments and will be skipped
+Reading data file: dtopo.data
+         first 5 lines are comments and will be skipped
+Reading data file: topo.data
+         first 5 lines are comments and will be skipped
+ *** in file: 
+ /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/bath
+ y/atlantic_1min.tt3
+     Shifting xllcorner by 0.5*dx to cell center
+ *** in file: 
+ /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/bath
+ y/atlantic_1min.tt3
+     Shifting yllcorner by 0.5*dy to cell center
+  
+ Reading topography file  
+ /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/bath
+ y/atlantic_1min.tt3                                                    
+  
+ Reading topography file  
+ /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/bath
+ y/newyork_3s.tt3                                                       
+Reading data file: qinit.data
+         first 5 lines are comments and will be skipped
+   qinit_type = 0, no perturbation
+Reading data file: fixed_grids.data
+         first 5 lines are comments and will be skipped
+Reading data file: friction.data
+         first 5 lines are comments and will be skipped
+Reading data file: multilayer.data
+         first 5 lines are comments and will be skipped
+Reading data file: surge.data
+         first 5 lines are comments and will be skipped
+ Reading storm date file 
+ /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-
+ ensemble/data/storms/geoclaw-longisland-tracks/LongIsland_9000.storm           
+                                           
+Reading data file: regions.data
+         first 5 lines are comments and will be skipped
+Reading data file: flagregions.data
+         first 5 lines are comments and will be skipped
+Reading data file: gauges.data
+         first 5 lines are comments and will be skipped
+Reading data file: fgmax_grids.data
+         first 5 lines are comments and will be skipped
+Reading data file: adjoint.data
+         first 5 lines are comments and will be skipped
+ rnode allocated...
+ node allocated...
+ listOfGrids allocated...
+ Storage allocated...
+ bndList allocated...
+Gridding level   1 at t =  0.864000E+06:     8 grids with       13440 cells
+   Setting initial dt to   1.600000000000000E-002
+  max threads set to           24
+  
+ Done reading data, starting computation ...  
+  
+ Total mass at initial time:   2.925145469887016E+016
+GEOCLAW: Frame    0 output files done at time t = 10.00
+
+forrtl: severe (408): fort: (3): Subscript #2 of the array NODE has value 0 which is less than the lower bound of 1
+
+==> runclaw: Will take data from  /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/storm-surge/holland80-amr2/9000_data
+==> runclaw: Will write output to  /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/storm-surge/holland80-amr2/9000_output
+==> runclaw: Removing all old fort/gauge files in  /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/storm-surge/holland80-amr2/9000_output
+
+==> Running with command:
+    /rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/xgeoclaw
+Traceback (most recent call last):
+  File "/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/clawutil/src/python/clawutil/runclaw.py", line 252, in runclaw
+    stderr=xclawerr)
+  File "/rigel/opt/anaconda3-2019.03/lib/python3.7/subprocess.py", line 347, in check_call
+    raise CalledProcessError(retcode, cmd)
+subprocess.CalledProcessError: Command '['/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/xgeoclaw']' returned non-zero exit status 152.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/clawutil/src/python/clawutil/runclaw.py", line 348, in <module>
+    runclaw(*args)
+  File "/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/clawutil/src/python/clawutil/runclaw.py", line 258, in runclaw
+    stderr=cpe.stderr)
+__main__.ClawExeError: 
+
+*** FORTRAN EXE FAILED ***
+
+Traceback (most recent call last):
+  File "/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/process-scripts/get_gauge_max.py", line 43, in <module>
+    with open(output_path, "w") as gauge_surge: 
+FileNotFoundError: [Errno 2] No such file or directory: '/rigel/apam/users/pcd2120/clawpack/clawpack-v5.8.0/surge-examples/atlantic/nyc-ensemble/max-surge/Violations-holland80-amr2/9000_gaugeMaxSurge.txt'

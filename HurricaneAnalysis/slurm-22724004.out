@@ -1,0 +1,65 @@
+
+The following have been reloaded with a version change:
+  1) anaconda/3-4.2.0 => anaconda/3-5.1
+
+/rigel/opt/anaconda3-5.1/lib/python3.6/site-packages/bs4/__init__.py:181: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("lxml"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 63 of the file HA.py. To get rid of this warning, change code that looks like this:
+
+ BeautifulSoup(YOUR_MARKUP})
+
+to this:
+
+ BeautifulSoup(YOUR_MARKUP, "lxml")
+
+  markup_type=markup_type))
+?C=N;O=D
+?C=M;O=A
+?C=S;O=A
+/atcf/archive/
+messages/
+aal012008.dat.gz
+aal022008.dat.gz
+aal032008.dat.gz
+aal042008.dat.gz
+aal052008.dat.gz
+aal062008.dat.gz
+aal072008.dat.gz
+aal082008.dat.gz
+aal092008.dat.gz
+aal102008.dat.gz
+aal112008.dat.gz
+aal122008.dat.gz
+aal132008.dat.gz
+aal142008.dat.gz
+aal152008.dat.gz
+aal162008.dat.gz
+aal172008.dat.gz
+acp012008.dat.gz
+aep012008.dat.gz
+aep022008.dat.gz
+aep032008.dat.gz
+aep042008.dat.gz
+aep052008.dat.gz
+aep062008.dat.gz
+aep072008.dat.gz
+aep082008.dat.gz
+aep092008.dat.gz
+aep102008.dat.gz
+aep112008.dat.gz
+aep122008.dat.gz
+aep132008.dat.gz
+aep142008.dat.gz
+aep152008.dat.gz
+aep162008.dat.gz
+aep172008.dat.gz
+aep182008.dat.gz
+bal012008.dat.gz
+Traceback (most recent call last):
+  File "HA.py", line 75, in <module>
+    with gzip.open(".".join((atcf_path, 'gz')), 'rb') as atcf_file:
+  File "/rigel/opt/anaconda3-5.1/lib/python3.6/gzip.py", line 53, in open
+    binary_file = GzipFile(filename, gz_mode, compresslevel)
+  File "/rigel/opt/anaconda3-5.1/lib/python3.6/gzip.py", line 163, in __init__
+    fileobj = self.myfileobj = builtins.open(filename, mode or 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: '/rigel/apam/users/pcd2120/clawpack/surge-examples/atlantic/nyc-ensemble/HurricaneAnalysis/bal182012.dat.gz'

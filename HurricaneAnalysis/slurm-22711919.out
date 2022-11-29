@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "HurricaneAnalysis.py", line 11, in <module>
+    import pandas
+  File "/rigel/opt/anaconda3-4.2.0/lib/python3.5/site-packages/pandas/__init__.py", line 56, in <module>
+    from pandas.util.nosetester import NoseTester
+  File "/rigel/opt/anaconda3-4.2.0/lib/python3.5/site-packages/pandas/util/nosetester.py", line 13, in <module>
+    from numpy.testing import nosetester
+ImportError: cannot import name 'nosetester'

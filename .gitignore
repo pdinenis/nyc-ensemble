@@ -1,0 +1,13 @@
+batch/
+chazstorms/
+chaztracks/
+data/
+#HurricaneAnalysis/
+max-surge/
+new_york/
+#process-scripts/
+randomprojstorms/
+storm-surge/
+
+chazstorms.tgz
+tracks.tar.bz2
